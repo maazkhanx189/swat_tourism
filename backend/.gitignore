@@ -1,8 +1,18 @@
-node_modules/
-dist/
+# Environment variables
 .env
 .env.*
 !.env.example
-uploads/
-coverage/
-*.tsbuildinfo
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log

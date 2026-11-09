@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --brand-green: #123d2b;
+  --dark-green: #0b2a1e;
+  --gold: #d6ae55;
+  --paper: #f7f8f5;
+  --text: #26352d;
+  --muted: #4a5950;
+}
+
+@theme inline {
+  --color-brand: var(--brand-green);
+  --color-dark-green: var(--dark-green);
+  --color-gold: var(--gold);
+  --color-paper: var(--paper);
+  --color-text: var(--text);
+  --font-sans: var(--font-open-sans);
+  --font-display: var(--font-poppins);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-open-sans), Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.section-shell {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
